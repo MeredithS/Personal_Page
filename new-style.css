@@ -1,0 +1,88 @@
+body{
+  background-image: url(pictures/trail2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*div{
+	display: block;
+}*/
+.section{
+	height: 100vh;
+	position: relative;
+}
+.page{
+	background-color: white;
+	width: 100%;
+
+}
+.summary{
+	width: 30%;
+	margin-top: 5%;
+	margin: 0 auto;
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 5px;
+}
+
+.discription{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.me-pic{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.spacer{
+	height: 5%;
+}
+
+.menu{
+	width: 50%;
+	margin: 0 auto;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	border: solid 4px black;
+	border-radius: 5px;
+	padding: 25px;
+  text-align: center;  
+  margin: 10%;
+}
+.poem-contain{
+	height: 90%;
+}
+.poem{
+	width: 95%;
+	height: 90%;
+	margin: 0 auto;
+	background-color: black;
+	border-radius: 5%;
+	position: absolute;
+}
+
+.p{
+	height:100%;
+}
+
+.stanza{
+	/*position: relative;*/
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 8%;
+	color: white;
+	
+}
+
+.contact-info{
+	width: 30%;
+	margin: 0 auto;
+}

@@ -2,46 +2,154 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Meredith's Page</title>
-	<script type="text/javascript" src="main.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meredith's Page</title> 
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.css"> 
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="new-style.css">
 </head>
 <body>
-	<div class="cover">
-		<img class="header-pic" src="pictures/trail2.jpg">
-		<div class="front-page">
-			<h1>Meredith Salguero</h1>
-			<h3>Eternal Student, Adventurer, and Natural Debugger</h3>
-			<h2>Web Developer.</h2>
-		</div>
-	</div>
-
-	<div class="cover">
-		<div class="me-pic">
-			<img src="pictures/me.jpg">
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Resume</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="cover">
-		<h1>Projects</h1>
-		<div class="container">
-			<div>
-				<img class="header-pic" src="pictures/Simon.png">
-			</div>
-			<div>
-				<p>First project completed using HTML, CSS, and JQuery.  The app is a game of short-term memory and response using colors and sounds.  Basic features include the user can play against the computer in a series of rounds, each round is more difficult.  The app notifies the player whose turn it is and if the player won the round.  Special features include the ability to start the game over at any point during the current game and the user cannot interact with the app until the start button is clicked</p>
+	<div class="container-fluid">
+		<div class="section">
+			<div class="summary">
+				<h1>Meredith Salguero</h1>
+				<h3>Eternal Student, Adventurer, and Natural Debugger</h3>
+				<h2>Web Developer.</h2>
 			</div>
 		</div>
-	</div>
+	</div><!--end div container-fluid-->
+	<div class="page">
+		<div class="container-fluid">
+			<div class="section">
+				<div class="row spacer">
+					<div class="col-md-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-sm-6 col-md-4">
+						<div class="menu">
+							<ul>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Resume</a></li>
+								<li><a href="#">About Me</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div><!--end menu-->
+					</div>
+				</div><!--end row-->
+				<div class="row discription">
+					<div class="col-sm-6 col-md-4">
+						<div class="me-pic ">
+							<img src="pictures/me.jpg">
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-sm-6 col-md-4">
+						<div class="me-pic">
+							<img src="pictures/me2.jpg">
+						</div>
+					</div>
+				</div><!--end row discription-->
+			</div><!--end section-->
+		</div><!--end container-->
+		<div class="section">
+			<div class="container-fluid">
+				<h1>Projects</h1>
+				<div class="row">
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="pictures/Simon.png">
+				      <div class="caption">
+				        <h3>Simon!</h3>
+				        <p>First project completed using HTML, CSS, and JQuery.  The app is a game of short-term memory and response using colors and sounds.  Basic features include the user can play against the computer in a series of rounds, each round is more difficult.  The app notifies the player whose turn it is and if the player won the round.  Special features include the ability to start the game over at any point during the current game and the user cannot interact with the app until the start button is clicked.</p>
+				        <p><a href="http://merediths.github.io/Simonsays/" class="btn btn-primary" role="button">Check it out!</a><a href="#" class="btn btn-default" role="button">See the code on github!</a></p>
+				      </div><!--ends div caption-->
+				    </div><!--ends div thumbnail-->
+				  </div><!--ends div col-md-3-->
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="pictures/WikiNutrition.png">
+				      <div class="caption">
+				        <h3>WikiNutrition</h3>
+				        <p>A Wiki developed using HTML, CSS, JavaScript/JQuery, Ruby, Sinatra, SQL, and ActiveRecord.  Basic  features include the ability for users to browse articles about nutrition.  Users may browse by most recently published or category.  If user is signed in then they may make edits to existing articles in markdown or add articles of their own.  Advanced features include the ability to add categories from an already existing drop down menu or create new categories that will not be repeated.</p>
+				        <p><a href="https://secret-citadel-8161.herokuapp.com/" class="btn btn-primary" role="button">Check it out!</a><a href="#" class="btn btn-default" role="button">See the code on github!</a></p>
+				      </div><!--ends div caption-->
+				    </div><!--ends div thumbnail-->
+				  </div><!--ends div col-md-3-->
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="pictures/Attendance_Tracker.png">
+				      <div class="caption">
+				        <h3>Attendance Tracker</h3>
+				        <p>A team based project that used the following technologies: Ruby on Rails, ActiveRecord, HTML, CSS, JavaScript, Heroku, Chart.js, Twilio, ActionMailer, and SendGrid.  Basic features include permission based accessibility to different features, the ability to send and receive text messages and automatic e-mails.  Advanced features are the ability to use information in received text messages to change records and charts with real time information.</p>
+				        <p><a href="https://floating-mesa-1461.herokuapp.com/" class="btn btn-primary" role="button">Check it out!</a><a href="#" class="btn btn-default" role="button">See the code on github!</a></p>
+				      </div><!--ends div caption-->
+				    </div><!--ends div thumbnail-->
+				  </div><!--ends div col-md-3-->
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="pictures/Alimenting.png">
+				      <div class="caption">
+				        <h3>Alimenting with Ailments</h3>
+				        <p>A single-page application built using a MEAN stack including Mongodb, Express, Angular, and Node.js.  Basic features include the ability to create an account, log-in, and view list of foods per ailment.  Once logged in user can add ailments to their account.  The application will suggest recipes based on the foods that the user is supposed to increase consumption while filtering out recipes that have foods that user should avoid. User has ability to go to the recipe's page or save to favorites.</p>
+				        <p><a href="https://sleepy-castle-49299.herokuapp.com/" class="btn btn-primary" role="button">Check it out!</a><a href="#" class="btn btn-default" role="button">See the code on github!</a></p>
+				      </div><!--ends div caption-->
+				    </div><!--ends div thumbnail-->
+				  </div><!--ends div col-md-3-->
+				</div><!--ends div row-->
+				<h3 class="discription">Check out my <a href="https://github.com/MeredithS">github</a> to see the code for all these projects and more!</h3>
+			</div><!--ends div container-fluid-->
+		</div><!--ends div section-->
+		<div class="section">
+			<h1>Resume</h1>
+			<div class="me-pic p">
+				<object src="Meredith_Salguero_Resume.pdf"><embed src="Meredith_Salguero_Resume.pdf" width="80%" height="90%"></embed></object>
+			</div><!--end div me-pic-->
+		</div><!--ends div section-->
+		<div class="section">
+			<h1>About Me</h1>
+			<div class="row poem-contain">
+				<div class="col-sm-6 col-md-2"></div>
+				<div class="col-sm-6 col-md-8 p">
+					<div class="poem">
+						<div class="stanza">
+							<p>I am an explorer, developer, and Curious George,</p>
+							<p>looking for the next challenge in which to engorge.</p>
+							<p>My ideal day, is not wasted away</p>
+							<p>but rather filled with learning and storage.</p>
+						</div>
+						<div class="stanza">
+							<p>Through General Assembly I learned to code.</p>
+							<p>My favorite languages are JQuery, Ruby, and Node.</p>
+							<p>I am looking hungerly, for a wonderful company,</p>
+							<p>where my talents can be showed.</p>
+						</div>
+						<div class="stanza">
+							<p>A literary genius I am not,</p>
+							<p>However, if it's a coder you have saught,</p>
+							<p>you have come to the right place,</p>
+							<p>as you can see in this space,</p>
+							<p>I am a programmer looking to be got.</p>
+						</div>
+					</div><!--end div poem-->
+				</div><!--end div col-sm-6 col-md-3-->
+				<div class="col-sm-6 col-md-2"></div>
+			</div><!--end div row-->
+		</div><!--end div section-->
+		<div class="section">
+			<h1>Contact Me</h1>
+			<div class="contact-info">
+				<h4>E-mail: <a href="mailto:salguero.meredith@gmail.com">salguero.meredith@gmail.com</a></h4>
+				<h4>LinkedIn: <a href="https://www.linkedin.com/in/meredithsalguero">Meredith Salguero</a></h4>
+				<h4>Phone: 412-576-9880</h4>
+			</div><!--end div contact-info-->
+		</div><!--ends div section-->
+	</div><!--ends div page-->
+	
+	
+
 </body>
 </html>
